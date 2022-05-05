@@ -59,10 +59,34 @@ elif pote1[grupoB[0]] != pote1[lista1[(numeropote2[6])]] and pote1[grupoB[1]] !=
 elif pote1[lista1[(numeropote2[2])]] != pote1[lista1[(numeropote2[6])]] and len(grupoC) < 2:
     grupoC.append(lista1[(numeropote2[6])])
 elif pote1[lista1[(numeropote2[0])]] != pote1[lista1[(numeropote2[6])]] and pote1[grupoA[1]] != pote1[
-    lista1[(numeropote2[6])]]:
+    lista1[(numeropote2[6])]] and len(grupoA) < 3:
     grupoA.append(lista1[(numeropote2[6])])
 else:
     grupoB.append(lista1[(numeropote2[6])])
+
+if pote1[grupoA[0]] != pote1[lista1[(numeropote2[7])]] and pote1[grupoA[1]] != pote1[lista1[(numeropote2[7])]] and len(
+        grupoA) < 2:
+    grupoA.append(lista1[(numeropote2[7])])
+elif pote1[grupoB[0]] != pote1[lista1[(numeropote2[7])]] and pote1[grupoB[1]] != pote1[
+    lista1[(numeropote2[7])]] and len(grupoB) < 2:
+    grupoB.append(lista1[(numeropote2[7])])
+elif pote1[lista1[(numeropote2[2])]] != pote1[lista1[(numeropote2[7])]] and len(grupoC) < 2:
+    grupoC.append(lista1[(numeropote2[7])])
+elif pote1[lista1[(numeropote2[0])]] != pote1[lista1[(numeropote2[6])]] and pote1[grupoA[1]] != pote1[
+    lista1[(numeropote2[7])]] and len(grupoA) < 3:
+    grupoA.append(lista1[(numeropote2[7])])
+elif pote1[lista1[(numeropote2[0])]] != pote1[lista1[(numeropote2[6])]] and pote1[grupoB[1]] != pote1[
+    lista1[(numeropote2[7])]] and len(grupoB) < 3:
+    grupoB.append(lista1[(numeropote2[7])])
+else:
+    grupoC.append(lista1[(numeropote2[7])])
+
+if len(grupoC) < 3:
+    grupoC.append(lista1[(numeropote2[8])])
+elif len(grupoB) < 3:
+    grupoB.append(lista1[(numeropote2[8])])
+else:
+    grupoA.append(lista1[(numeropote2[8])])
 
 print(grupoA)
 print(grupoB)
